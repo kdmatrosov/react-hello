@@ -1,0 +1,27 @@
+{
+  "name": "react-hello",
+  "version": "1.0.0",
+  "description": "react",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdmatrosov/react-hello.git"
+  },
+  "keywords": [
+    "react",
+    "start"
+  ],
+  "author": "Kirill Matrosov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdmatrosov/react-hello/issues"
+  },
+  "homepage": "https://github.com/kdmatrosov/react-hello#readme"
+}
