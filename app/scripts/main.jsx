@@ -4,25 +4,24 @@ import { Router, Route } from 'react-router'
 
 const node = document.getElementById('content');
 
-//es6 way to define new component
-class RootComponent extends React.Component {
-  render() {
+var TweetBox = React.createClass({
+  render: function() {
     return (
-        <div>
-
-
-        </div>
-    )
+      <div className="well clearfix">
+		<p>
+			<textarea className="form-control"></textarea>
+        </p>
+		<p>
+			<button className="btn btn-primary pull-right">Tweet</button>
+        </p>
+      </div>
+    );
   }
-}
+});
+
+ReactDOM.render(
+  <TweetBox />,
+  node
+);
 
 
-//it's an example of rendering reakt compontnts with routing
-ReactDOM.render((
-    //Internally, the router converts your <Route> element hierarchy to a route config.
-    <Router>
-        <Route path="/" component={RootComponent}>
-        </Route>
-    </Router>
-), node);
-//), document.body);
