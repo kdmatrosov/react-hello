@@ -24,17 +24,24 @@ var TweetBox = React.createClass({
   {
 	return this.state.text.trim();  
   },
+  renderHeader: function(text)
+  {
+	return (<div className='label label-default'>
+		{text}
+	</div>);  
+  },
   render: function() {
 	  //в случае disabled опять проверка по жс внутри верстки....
     return (
       <div className="well clearfix">
-		<p>
+		{this.renderHeader('Заголовок')}
+		<br/>
+		<br/>
 			<textarea className="form-control" onChange={this.onTextAreaChange}></textarea>
-        </p>
-		<p> 
+        <br/>
 			<span>{this.getTextLength()}</span>
 			<button className="btn btn-primary pull-right" disabled={this.state.text.length === 0}>Tweet</button>
-        </p>
+        
       </div>
     );
   }
